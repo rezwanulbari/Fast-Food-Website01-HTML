@@ -1,0 +1,31 @@
+
+/*---==================
+    09. Video css 
+=================----*/
+
+.video-one_image-box{
+    & .image-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(14, 19, 23, 0.137);
+    }
+    & .play-content-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%,-50%));
+        color: $primary;
+        & .video-popup{
+            & i{
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                @extend %flex-center;
+                background-color: #fff;
+            }
+        }
+    }
+}

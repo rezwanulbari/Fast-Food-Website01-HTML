@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?e2ee03f5e531a4aef80064dd7529a383") format("truetype"), url("./flaticon.woff?e2ee03f5e531a4aef80064dd7529a383") format("woff"), url("./flaticon.woff2?e2ee03f5e531a4aef80064dd7529a383") format("woff2"), url("./flaticon.eot?e2ee03f5e531a4aef80064dd7529a383#iefix") format("embedded-opentype"), url("./flaticon.svg?e2ee03f5e531a4aef80064dd7529a383#flaticon") format("svg"); }
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.flaticon-plate:before {
+  content: ""; }
+
+.flaticon-facebook-app-symbol:before {
+  content: ""; }
+
+.flaticon-instagram:before {
+  content: ""; }
+
+.flaticon-pinterest:before {
+  content: ""; }
+
+.flaticon-cheese-burger:before {
+  content: ""; }
+
+.flaticon-pizza-1:before {
+  content: ""; }
+
+.flaticon-chef-hat:before {
+  content: ""; }
+
+.flaticon-right-arrow:before {
+  content: ""; }
+
+.flaticon-pizza-slice:before {
+  content: ""; }
+
+.flaticon-right-quote:before {
+  content: ""; }
+
+.flaticon-instagram-1:before {
+  content: ""; }
+
+.flaticon-shrimp-1:before {
+  content: ""; }
+
+.flaticon-coffee-beans:before {
+  content: ""; }
+
+.flaticon-crab-1:before {
+  content: ""; }
+
+.flaticon-retention:before {
+  content: ""; }
+
+.flaticon-chef:before {
+  content: ""; }
+
+.flaticon-romantic-dinner:before {
+  content: ""; }
+
+.flaticon-costumer:before {
+  content: ""; }
+
+.flaticon-crab-2:before {
+  content: ""; }
+
+.flaticon-drink:before {
+  content: ""; }
+
+.flaticon-pizza-slice-1:before {
+  content: ""; }
+
+.flaticon-chef-1:before {
+  content: ""; }
+
+.flaticon-delivery-man:before {
+  content: ""; }
+
+.flaticon-food-serving:before {
+  content: ""; }
+
+.flaticon-discuss:before {
+  content: ""; }
+
+.flaticon-certificate:before {
+  content: ""; }
+
+.flaticon-smartphone:before {
+  content: ""; }
+
+.flaticon-check:before {
+  content: ""; }

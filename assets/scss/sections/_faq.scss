@@ -1,0 +1,93 @@
+
+/*---==================
+    15. Faq css 
+=================----*/
+
+
+.faq-tabs-box{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
+    @media #{$lp}{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    @media #{$lm}{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    & .faq-tabs{
+        padding: 50px 52px;
+        @media #{$lm}{
+            padding: 50px 30px;
+        }
+        & ul{
+            & li{
+                width: 100%;
+                & button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 20px 30px;
+                    background-color: rgba(223, 63, 0, 0.07);
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    border-radius: 5px;
+                    font: 400 27px $forum;
+                    line-height: 30px;
+                    width: 100%;
+                    color: $heading;
+                    &.active{
+                        background-color: $primary;
+                        border-color: transparent;
+                        color: #fff;
+                    }
+                }
+                & i{
+                    font-size: 20px;
+                }
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.accordion-card{
+    & .accordion-header{
+        & h3.accordion-title{
+            border: 1px solid rgba(14, 19, 23, 0.1);
+            padding: 20px 30px 20px 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            line-height: 33px;
+            @media #{$xm}{
+                font-size: 20px;
+                line-height: 30px;
+            }
+            &:after{
+                content: '\f061';
+                font-family: "Font Awesome 5 Pro";
+                font-weight: 400;
+                font-size: 18px;
+                margin-inline-start: auto;
+            }
+            &[aria-expanded=true]{
+                background-color: #FDF1ED;
+                &:after{
+                    content: '\f063';
+                }
+            }
+        }
+    }
+    & .accordion-body{
+        padding: 20px 40px 0;
+        & p{
+            line-height: 180%;
+        }
+    }
+}

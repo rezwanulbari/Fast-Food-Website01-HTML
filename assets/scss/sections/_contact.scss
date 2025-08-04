@@ -1,0 +1,88 @@
+
+
+/*---==================
+    19. Contact css 
+=================----*/
+
+.contact-info-wrapper{
+    border: 1px solid rgba(14, 19, 23, 0.1);
+    padding-left: 50px;
+    padding-right: 50px;
+    @media #{$lm}{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.contact-wrapper-one{
+    border: 1px solid rgba(14, 19, 23, 0.1);
+    padding-left: 50px;
+    padding-right: 50px;
+    @media #{$lm}{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @media #{$xs}{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.contact-form-one{
+    & .form_control{
+        background-color: #FDF1ED;
+        border: 1px solid rgba(14, 19, 23, 0.1);
+        border-radius: 5px;
+        height: 70px;
+        margin-bottom: 30px;
+        font-weight: 600;
+        font-size: 18px;
+        @include transition(.3s);
+        &::placeholder{
+            color: $heading;
+        }
+        &:focus{
+            border-color: #0E1317;
+        }
+    }
+    & textarea.form_control{
+        min-height: 200px;
+    }
+    & .main-btn{
+        width: 100%;
+        padding: 20px 30px;
+        border-radius: 7px;
+    }
+}
+
+.form-group.has-error {
+    .form_control {
+        margin-bottom: 5px;
+        transition: none;
+    }
+    .with-errors {
+        color: red;
+        margin-bottom: 10px;
+    }
+}
+
+#msgSubmit.text-danger {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.map-box{
+    & iframe{
+        width: 100%;
+        display: inherit;
+        border: none;
+    }
+}
+
+.contact-page-map{
+    & .map-box{
+        & iframe{
+            min-height: 700px;
+        }
+    }
+}

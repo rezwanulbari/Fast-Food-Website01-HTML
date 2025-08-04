@@ -1,0 +1,268 @@
+.nice-select{
+	text-align: right !important;
+}
+.nice-select:after {
+	right: auto;
+	left: 0;
+}
+.about-shape-section .shape.shape-one {
+	left: auto;
+	right: 140px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+	.about-shape-section .shape.shape-one {
+		left: auto;
+		right: 40px;
+	}
+}
+.about-shape-section .shape.shape-two {
+	right: auto;
+	left: 140px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+	.about-shape-section .shape.shape-two {
+		right: auto;
+		left: 40px;
+	}
+}
+.about-shape-two-section .shape.shape-one {
+	left: auto;
+	right: 160px;
+}
+.about-shape-two-section .shape.shape-two {
+	right: auto;
+	left: 200px;
+}
+
+.video-line-section .line-shape.line-shape-one {
+	left: auto;
+	right: 90px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.video-line-section .line-shape.line-shape-one {
+		left: auto;
+		right: 0;
+	}
+}
+.fact-bg-image:after {
+	left: auto;
+	right: 0;
+}
+.working-bg-section .hours-bg {
+	right: auto;
+	left: 0;
+}
+.testimonial-section-one .shape.line-shape-one {
+	left: auto;
+	right: -30px;
+}
+.testimonial-section-one .shape.shape-one {
+	right: auto;
+	left: 45px;
+}
+.reservation-line-section .line-shape.line-shape-one {
+	right: auto;
+	left: -13%;
+}
+.error-page-area .object.object-one {
+	left: auto;
+	right: 6.5%;
+}
+.error-page-area .object.object-two {
+	right: auto;
+	left: 6%;
+}
+.error-page-area .object.object-three {
+	right: auto;
+	left: 10%;
+}
+.header-navigation .main-menu ul>li .sub-menu {
+	left: auto;
+	right: 0;
+	text-align: right;
+}
+.header-navigation.breakpoint-on .nav-menu {
+	text-align: right;
+	left: auto;
+	right: -280px;
+}
+.header-navigation.breakpoint-on .nav-menu.menu-on {
+	left: auto;
+	right: 0;
+}
+.header-navigation.breakpoint-on .nav-menu .main-menu ul li .sub-menu {
+	left: auto;
+	right: 0;
+}
+.header-navigation.breakpoint-on .nav-menu .main-menu ul li .dd-trigger {
+	right: auto;
+	left: 0;
+}
+.header-navigation.breakpoint-on .nav-menu .main-menu.menu-on {
+	left: auto;
+	right: 0;
+}
+.banner-one .shape.shape-one {
+	left: auto;
+	right: 100px;
+}
+.banner-one .shape.shape-two {
+	right: auto;
+	left: 55px;
+}
+.banner-one .shape.line-shape-one {
+	right: auto;
+	left: 55px;
+}
+.banner-two .shape.shape-one {
+	left: auto;
+	right: 100px;
+}
+.banner-two .shape.shape-two {
+	right: auto;
+	left: 40%;
+}
+@media (max-width: 991px) {
+	.banner-two .shape.shape-two {
+		right: auto;
+		left: 70%;
+	}
+}
+.banner-two .shape.svg-shape {
+	left: auto;
+	right: 0;
+}
+.hero-arrows {
+	right: auto;
+	left: 10%;
+}
+.about-two_image-box .shape.shape-one {
+	right: auto;
+	left: 0;
+}
+.fancy-icon-box .icon:after {
+	left: auto;
+	right: 0;
+}
+.single-history-item .shape.shape-one {
+	right: auto;
+	left: 0;
+}
+.single-history-item:nth-child(even) {
+	text-align: left;
+}
+.single-history-item:nth-child(even) .shape.shape-one {
+	right: 0;
+	left: auto;
+}
+.single-history-item:nth-child(even) .history-image-box {
+	text-align: right;
+}
+@media (max-width: 991px) {
+	.single-history-item:nth-child(even) .history-image-box {
+		text-align: left;
+	}
+}
+.single-history-item:nth-child(even) .history-content-box {
+	direction: ltr;
+}
+.single-history-item .history-image-box {
+	text-align: left;
+}
+@media (max-width: 991px) {
+	.single-history-item .history-image-box {
+		text-align: right;
+	}
+}
+.single-progress-bar .progress-title h5 span {
+	float: left;
+}
+.event-one_image-box .shape.circle-shape {
+	left: auto;
+	right: 0;
+}
+.reservation-wrapper-one .reservation-after-img {
+	right: auto;
+	left: 0;
+}
+.reservation-three_image-box .reservation-img-two {
+	left: auto;
+	right: 25%;
+}
+.reservation-three_image-box .reservation-img-three {
+	left: auto;
+	right: -70px;
+}
+.reservation-style-two form.reservation-form label,
+.reservation-style-two form.reservation-form .nice-select:after {
+	right: auto;
+	left: 20px;
+}
+.reservation-style-three form.reservation-form label,
+.reservation-style-three form.reservation-form .nice-select:after,
+.reservation-style-four form.reservation-form label,
+.reservation-style-four form.reservation-form .nice-select:after {
+	right: auto;
+	left: 25px;
+}
+.testimonial-one_image-box .testimonial-img-one {
+	left: auto;
+	right: 0;
+}
+.testimonial-one_image-box .testimonial-img-two {
+	right: auto;
+	left: 25%;
+}
+.single-testimonial-one:after {
+	left: auto;
+	right: -10px;
+}
+.single-testimonial-three .testimonial-inner-content .author-title-thumb {
+	text-align: right;
+}
+.testimonial-content-box .testimonial-dots ul.slick-dots {
+	text-align: right;
+}
+.product-search-filter .filter-category>ul>li .nice-select:after {
+	right: auto;
+	left: 25px;
+}
+.single-product-item .product-thumbnail span.discount {
+	right: auto;
+	left: 0;
+}
+.products-sidebar-area .product-search-widget form label {
+	right: auto;
+	left: 20px;
+}
+.reservation-style-one form.reservation-form label,
+.reservation-style-one form.reservation-form .nice-select:after,
+.blog-item-one .post-thumbnail .post-date,
+.blog-item-two .post-thumbnail .post-date,
+.blog-details-wrapper .blog-post .post-thumbnail .post-date,
+.sidebar-widget-area .search-widget form label {
+	right: auto;
+	left: 30px;
+}
+/*  */
+.sidebar-widget-area .category-widget .category-nav li a span {
+	float: left;
+}
+.sidebar-widget-area .contact-info-widget:after {
+	left: auto;
+    right: 0;
+}
+.dot-bg {
+	left: auto;
+    right: 0;
+}
+.about-company-widget .footer-content form label {
+	right: auto;
+    left: 20px;
+}
+
+footer,
+section,
+header{
+	text-align: right;
+}

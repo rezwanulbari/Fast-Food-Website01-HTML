@@ -1,0 +1,411 @@
+
+/*---==================
+    10. Element css 
+=================----*/
+
+.about-button{
+    & .main-btn{
+        margin-inline-end: 20px;
+        margin-bottom: 10px;
+        @media #{$lg}{
+            padding: 18px 25px;
+        }
+    }
+}
+
+.call-button{
+    display: inline-flex;
+    & .icon{
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: rgba(223, 63, 0, 0.1);
+        @extend %flex-center;
+        font-size: 20px;
+        color: $primary;
+        margin-inline-end: 10px;
+    }
+    & .text{
+        margin-top: -3px;
+        & span{
+            font-size: 14px;
+            line-height: 19px;
+        }
+        & h5{
+            line-height: 27px;
+        }
+    }
+}
+
+/* Animated Icon Hover */
+
+.animate-hover-icon{
+    &:hover{
+        & .icon{
+            & i{
+                animation: shake linear 0.3s infinite;
+            }
+        }
+    }
+}
+
+ul.slick-dots{
+    text-align: center;
+    & li{
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        &:after{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            @include transform(translate(-50%,-50%));
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: $primary;
+        }
+        &.slick-active{
+            border-color: $primary;
+        }
+    }
+}
+
+.check-style-one{
+    & li{
+        display: flex;
+        align-items: center;
+        color: $heading;
+        margin-bottom: 12px;
+        @media #{$lg}{
+            font-size: 15px;
+        }
+        &:before{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Pro';
+            font-weight: 400;
+            color: #fff;
+            margin-inline-end: 10px;
+            flex: 0 0 25px;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: $primary;
+            font-size: 12px;
+        }
+    }
+}
+.check-style-50{
+    display: flex;
+    flex-wrap: wrap;
+    & li{
+        width: 50%;
+    }
+}
+
+.quote-box{
+    padding: 6px 30px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    & p{
+        @media #{$xs}{
+            font-size: 16px;
+        }
+    }
+}
+
+.single-counter-item{
+    @media #{$xss}{
+        text-align: center;
+    }
+    & .counter-inner-item{
+        & .icon{
+            margin-bottom: 15px;
+            & i{
+                font-size: 60px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.single-history-item{
+    position: relative;
+    & .shape{
+        position: absolute;
+        @media #{$xs}{
+            display: none;
+        }
+        &.shape-one{
+            right: 0;
+            top: 0;
+        }
+    }
+    &:nth-child(even){
+        text-align: right;
+        & .shape{
+            &.shape-one{
+                right: auto;
+                left: 0;
+            }
+        }
+        & .history-image-box{
+            text-align: left;
+            @media #{$xm}{
+                text-align: right;
+            }
+        }
+        & .history-content-box{
+            direction: rtl;
+        }
+        & > .row{
+            flex-direction: row-reverse;
+        }
+    }
+    & .history-image-box{
+        text-align: right;
+        @media #{$xm}{
+            text-align: left;
+            margin-bottom: 40px;
+        }
+    }
+    & .history-content-box{
+        padding-inline-start: 15px;
+        padding-inline-end: 30%;
+        @media #{$xm}{
+            padding-inline-end: 0%;
+        }
+        & span.duration{
+            background-color: $primary;
+            padding: 13px 25px;
+            color: #fff;
+            font: 400 27px $forum;
+            line-height: 30px;
+            margin-inline-start: -70px;
+            margin-bottom: 30px;
+            @media #{$xm}{
+                margin-inline-start: 0;
+                font-size: 20px;
+            }
+        }
+        & > p{
+            margin-bottom: 20px;
+        }
+        & .author-title-thumb{
+            & .author-thumb{
+                width: 60px;
+                height: 60px;
+            }
+            & .author-title{
+                & h4{
+                    & span{
+                        font-size: 16px;
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.single-hour-box{
+    & h4.title{
+        padding: 22px 45px;
+        background: url(../images/shape/hour-bg-1.png) no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        @media #{$lg}{
+            padding: 22px 30px;
+            background-size: contain;
+        }
+        @media #{$xs}{
+            padding: 22px 30px;
+            background-size: contain;
+        }
+        @media #{$sm}{
+            background-size: cover;
+        }
+        & span.dot-border{
+            flex-grow: 1;
+            border-bottom: 1px dashed;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.single-info-box{
+    display: flex;
+    justify-content: center;
+    @media #{$xs}{
+        justify-content: start;
+    }
+    & .icon{
+        flex: 0 0 auto;
+        width: 65px;
+        margin-inline-end: 30px;
+    }
+    & .info{
+        margin-top: -8px;
+        & span.title{
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 10px;
+            @media #{$lm}{
+                font-size: 15px;
+            }
+        }
+        & p{
+            font-family: $forum;
+            color: $heading;
+            font-size: 24px;
+            line-height: 32px;
+            @media #{$lm}{
+                font-size: 17px;
+                line-height: 28px;
+            }
+            &:hover{
+                & > a{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+.single-progress-bar{
+    overflow: hidden;
+    & .progress-title{
+        margin-bottom: 15px;
+        & h5{
+            & span{
+                float: right;
+            }
+        }
+    }
+    & .progress-bar{
+        background-color: $primary;
+        height: 1px;
+        margin-bottom: 5px;
+    }
+    & .progress{
+        background-color: $primary;
+        border-radius: 0;
+        height: 3px;
+    }
+}
+
+.event-one_image-box{
+    margin-bottom: -70px;
+    @media #{$xm}{
+        display: none;
+    }
+    & .shape{
+        position: absolute;
+        z-index: -1;
+        &.circle-shape{
+            top: -50px;
+            left: 0;
+            & span{
+                width: 500px;
+                height: 500px;
+                border-radius: 50%;
+                background-color: $primary;
+                @media #{$lg}{
+                    width: 450px;
+                    height: 450px;
+                }
+            }
+        }
+    }
+}
+
+.instagram-box{
+    &:hover{
+        & .instagram-img{
+            & .insta-overlay{
+                visibility: visible;
+                opacity: 1;
+            }
+            & .insta-icon{
+                top: 50%;
+                @include transform(translate(-50%,-50%));
+                visibility: visible;
+                opacity: 1;
+            }
+        }    
+    }
+    & .instagram-img{
+        position: relative;
+        overflow: hidden;
+        & img{
+            width: 100%;
+        }
+        & .insta-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(14, 19, 23, 0.5);
+            visibility: hidden;
+            opacity: 0;
+            @include transition(.3s);
+        }
+        & .insta-icon{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            @include transform(translate(-50%,-40%));
+            font-size: 50px;
+            color: #fff;
+            visibility: hidden;
+            opacity: 0;
+            @include transition(.4s);
+        }
+    }
+}
+
+
+.qichen-pagination{
+    & ul{
+        & li{
+            display: inline-block;
+            &:not(:last-child){
+                margin-inline-end: 10px;
+            }
+            & a{
+                width: 60px;
+                height: 60px;
+                border: 1px solid rgba(14, 19, 23, 0.1);
+                color: $heading;
+                font: 600 20px $forum;
+                @extend %flex-center;
+                margin-bottom: 10px;
+                @media #{$xs}{
+                    width: 40px;
+                    height: 40px;
+                    font-size: 16px;
+                }
+                &:hover{
+                    background-color: $primary;
+                    border-color: transparent;
+                    color: #fff;
+                }
+                &.prev{
+                    &:hover{
+                        background-color: $heading;
+                    }
+                }
+            }
+        }
+    }
+}

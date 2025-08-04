@@ -1,0 +1,164 @@
+
+/*---==================
+    20. Footer css 
+=================----*/
+
+.footer-default{
+    & .copyright-area{
+        border-top: 1px solid rgba(14, 18, 22, 0.1);
+    }
+}
+
+.dot-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.footer-dark{
+    & .copyright-area{
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    & .footer-widget{
+        & h4.widget-title{
+            color: #868686;
+        }
+    }
+    .contact-info-widget{
+        & .contact-info-box{
+            & > p{
+                color: #fff;
+            }
+        }
+    }
+}
+
+.footer-widget{
+    & h4.widget-title{
+        font-size: 27px;
+        line-height: 45px;
+        margin-bottom: 15px;
+    }
+}
+
+.about-company-widget{
+    & .footer-content{
+        & .footer-logo{
+            background-color: $primary;
+            padding: 20px 35px;
+        }
+        & > p{
+            margin-bottom: 20px;
+        }
+        & form{
+            & label{
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                & i{
+                    color: $primary;
+                }
+            }
+            & .form_control{
+                background-color: #fff;
+                box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+                border-radius: 7px;
+                height: 56px;
+                font-size: 14px;
+                &::placeholder{
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+.footer-nav-content{
+    & ul.footer-nav{
+        & li{
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+            & a{
+                font-size: 18px;
+                &:hover{
+                    @extend %link-hover;
+                }
+            }
+        }
+    }
+}
+
+.footer-nav-widget-two{
+    & .footer-nav-content{
+        display: flex;
+        flex-wrap: wrap;
+        & .footer-nav{
+            width: 50%;
+        }
+    }
+    
+}
+
+.contact-info-widget{
+    & .contact-info-box{
+        & span.title{
+            font-size: 18px;
+            line-height: 45px;
+        }
+        & h3{
+            font-size: 40px;
+            line-height: 45px;
+            &:hover{
+                @extend %link-hover;
+            }
+        }
+        & > p{
+            color: $heading;
+            font-size: 18px;
+            line-height: 30px;
+            &:hover{
+                & a{
+                    @extend %link-hover;
+                }
+            }
+        }
+    }
+}
+
+.copyright-area{
+    padding: 20px 0;
+    & .copyright-text{
+        @media #{$xm}{
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    }
+    & .copyright-nav{
+        @media #{$xm}{
+            text-align: center;
+        }
+        & ul{
+            & li{
+                display: inline-block;
+                &:not(:first-child){
+                    margin-inline-start: 20px;
+                    @media #{$xm}{
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+                }
+                & a{
+                    &:hover{
+                        @extend %link-hover;
+                    }
+                }
+            }
+        }
+    }
+}

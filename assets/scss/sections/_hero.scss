@@ -1,0 +1,261 @@
+
+/*---==================
+    04. Hero css 
+=================----*/
+
+
+/*====== Banner One ======*/ 
+
+.banner-one{
+    background-color: rgba(223, 63, 0, 0.07);
+    padding: 240px 0 60px;
+    @media #{$xs}{
+        padding: 180px 0 60px;
+    }
+    & .shape{
+        position: absolute;
+        z-index: -1;
+        & span{
+            & img{
+                opacity: .04;
+            }
+        }
+        &.shape-one{
+            left: 100px;
+            bottom: 145px;
+        }
+        &.shape-two{
+            right: 55px;
+            bottom: 30px;
+            @media #{$xs}{
+                display: none;
+            }
+        }
+        &.line-shape-one{
+            top: 60%;
+            @include transform(translateY(-60%));
+            right: 55px;
+            & img{
+                opacity: 1;
+            }
+            @media #{$lm}{
+                display: none;
+            }
+        }
+    }
+    & .hero-content{
+        & h1{
+            font: 400 130px $forum;
+            line-height: 1;
+            margin-bottom: 35px;
+            @media #{$lp}{
+                font-size: 100px;
+            }
+            @media #{$lm}{
+                font-size: 60px;
+            }
+            @media #{$xs}{
+                font-size: 40px;
+            }
+        }
+        & p{
+            margin-bottom: 40px;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        & .hero-button{
+            & .main-btn{
+                margin-inline-start: 25px;
+            }
+        }
+    }
+}
+
+
+/*====== Banner Two ======*/ 
+
+.banner-two{
+    padding: 100px 0 110px;
+    overflow: hidden;
+    & .shape{ 
+        position: absolute;
+        z-index: -1;
+        &.shape-one{
+            left: 100px;
+            top: 125px;
+            & img{
+                opacity: .04;
+            }
+        }
+        &.shape-two{
+            top: 100px;
+            right: 40%;
+            z-index: 1;
+            @media #{$xm}{
+                right: 70%;
+            }
+        }
+        &.svg-shape{
+            bottom: 0;
+            left: 0;
+            & path{
+                fill: #fbf8f5;
+            }
+        }
+    }
+    & .hero-content{
+        & span.tag-line{
+            padding: 10px 53px 10px 22px;
+            background: url(../images/hero/tag-bg.png) no-repeat;
+            background-size: cover;
+            color: #fff;
+            font: 400 27px $forum;
+            margin-bottom: 40px;
+        }
+        & h1{
+            font-size: 180px;
+            line-height: 1;
+            margin-bottom: 60px;
+            @media #{$lm}{
+                font-size: 120px;
+            }
+            @media #{$xs}{
+                font-size: 60px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    & .hero-img-box{
+        @media #{$xm}{
+            margin-bottom: 50px;
+        }
+        & img{
+            filter: drop-shadow(0px 10px 60px rgba(223, 63, 0, 0.3));
+        }
+    }
+}
+
+/*====== Banner Three ======*/ 
+
+.banner-three{
+    background-color: $heading;
+    & .single-slider{
+        padding: 225px 0 120px;
+        padding-inline-start: 110px;
+        @media #{$xm}{
+            padding-inline-start: 0;
+        }
+    }
+    & .hero-content{
+        position: relative;
+        max-width: 615px;
+        z-index: 1;
+        & h1{
+            font-size: 200px;
+            line-height: 1;
+            margin-bottom: 30px;
+            @media #{$xs}{
+                font-size: 100px;
+            }
+        }
+    }
+    & .hero-image{
+        position: relative;
+        margin-top: -330px;
+        max-width: 1425px;
+        z-index: -1;
+        margin-inline-start: auto;
+        @media #{$xm}{
+            margin-top: 60px;
+        }
+        & .image-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(140.32deg, rgba(14, 19, 23, 0.92) 10.48%, rgba(14, 19, 23, 0) 77.33%);
+        }
+        & img{
+            display: inline-block;
+        }
+    }
+}
+.hero-arrows{
+    position: absolute;
+    bottom: 85px;
+    right: 10%;
+    display: flex;
+    & .slick-arrow{
+        width: 65px;
+        height: 65px;
+        @extend %flex-center;
+        background-color: #fff;
+        cursor: pointer;
+        @include transition(.3s);
+        &.next,
+        &:hover{
+            background-color: $primary;
+            color: #fff;
+        }
+    }
+}
+
+/*====== Page Banner ======*/ 
+
+.page-banner{
+    padding: 290px 0 150px;
+    position: relative;
+    z-index: 1;
+    @media #{$lm}{
+        padding: 210px 0 150px;
+    }
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(10, 0, 0, 0.8);
+        z-index: -1;
+    }
+    & .page-banner-content{
+        & h1{
+            font-size: 90px;
+            line-height: 1.3em;
+            margin-bottom: 18px;
+            color: #fff;
+            @media #{$lm}{
+                font-size: 80px;
+            }
+            @media #{$xs}{
+                font-size: 40px;
+            }
+        }
+        & ul.breadcrumb-link{
+            background-color: $primary;
+            display: inline-flex;
+            border-radius: 7px;
+            padding: 15px 40px;
+            & li{
+                font-weight: 600;
+                font-size: 17px;
+                &:hover{
+                    & a{
+                        color: $heading;
+                    }
+                }
+                &:not(:last-child){
+                    &:after{
+                        display: inline-block;
+                        content: '\f061';
+                        font-family: 'Font Awesome 5 Pro';
+                        margin-left: 20px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

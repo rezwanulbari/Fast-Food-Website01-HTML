@@ -1,0 +1,137 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?e2ee03f5e531a4aef80064dd7529a383") format("truetype"),
+url("./flaticon.woff?e2ee03f5e531a4aef80064dd7529a383") format("woff"),
+url("./flaticon.woff2?e2ee03f5e531a4aef80064dd7529a383") format("woff2"),
+url("./flaticon.eot?e2ee03f5e531a4aef80064dd7529a383#iefix") format("embedded-opentype"),
+url("./flaticon.svg?e2ee03f5e531a4aef80064dd7529a383#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "plate": "\f101",
+    "facebook-app-symbol": "\f102",
+    "instagram": "\f103",
+    "pinterest": "\f104",
+    "cheese-burger": "\f105",
+    "pizza-1": "\f106",
+    "chef-hat": "\f107",
+    "right-arrow": "\f108",
+    "pizza-slice": "\f109",
+    "right-quote": "\f10a",
+    "instagram-1": "\f10b",
+    "shrimp-1": "\f10c",
+    "coffee-beans": "\f10d",
+    "crab-1": "\f10e",
+    "retention": "\f10f",
+    "chef": "\f110",
+    "romantic-dinner": "\f111",
+    "costumer": "\f112",
+    "crab-2": "\f113",
+    "drink": "\f114",
+    "pizza-slice-1": "\f115",
+    "chef-1": "\f116",
+    "delivery-man": "\f117",
+    "food-serving": "\f118",
+    "discuss": "\f119",
+    "certificate": "\f11a",
+    "smartphone": "\f11b",
+    "check": "\f11c",
+);
+
+.flaticon-plate:before {
+    content: map-get($flaticon-map, "plate");
+}
+.flaticon-facebook-app-symbol:before {
+    content: map-get($flaticon-map, "facebook-app-symbol");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-pinterest:before {
+    content: map-get($flaticon-map, "pinterest");
+}
+.flaticon-cheese-burger:before {
+    content: map-get($flaticon-map, "cheese-burger");
+}
+.flaticon-pizza-1:before {
+    content: map-get($flaticon-map, "pizza-1");
+}
+.flaticon-chef-hat:before {
+    content: map-get($flaticon-map, "chef-hat");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-pizza-slice:before {
+    content: map-get($flaticon-map, "pizza-slice");
+}
+.flaticon-right-quote:before {
+    content: map-get($flaticon-map, "right-quote");
+}
+.flaticon-instagram-1:before {
+    content: map-get($flaticon-map, "instagram-1");
+}
+.flaticon-shrimp-1:before {
+    content: map-get($flaticon-map, "shrimp-1");
+}
+.flaticon-coffee-beans:before {
+    content: map-get($flaticon-map, "coffee-beans");
+}
+.flaticon-crab-1:before {
+    content: map-get($flaticon-map, "crab-1");
+}
+.flaticon-retention:before {
+    content: map-get($flaticon-map, "retention");
+}
+.flaticon-chef:before {
+    content: map-get($flaticon-map, "chef");
+}
+.flaticon-romantic-dinner:before {
+    content: map-get($flaticon-map, "romantic-dinner");
+}
+.flaticon-costumer:before {
+    content: map-get($flaticon-map, "costumer");
+}
+.flaticon-crab-2:before {
+    content: map-get($flaticon-map, "crab-2");
+}
+.flaticon-drink:before {
+    content: map-get($flaticon-map, "drink");
+}
+.flaticon-pizza-slice-1:before {
+    content: map-get($flaticon-map, "pizza-slice-1");
+}
+.flaticon-chef-1:before {
+    content: map-get($flaticon-map, "chef-1");
+}
+.flaticon-delivery-man:before {
+    content: map-get($flaticon-map, "delivery-man");
+}
+.flaticon-food-serving:before {
+    content: map-get($flaticon-map, "food-serving");
+}
+.flaticon-discuss:before {
+    content: map-get($flaticon-map, "discuss");
+}
+.flaticon-certificate:before {
+    content: map-get($flaticon-map, "certificate");
+}
+.flaticon-smartphone:before {
+    content: map-get($flaticon-map, "smartphone");
+}
+.flaticon-check:before {
+    content: map-get($flaticon-map, "check");
+}

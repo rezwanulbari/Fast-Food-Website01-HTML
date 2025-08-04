@@ -1,0 +1,105 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Qichen - Restaurant HTML Template
+    Template URI: site.com
+    Description: Qichen is a creative & unique Restaurant HTML Template . This template is exclusive to Restaurants, Fast Food, Bakery, Cafe, Food Shop, Tea/Coffee Shop, Seafood Restaurant, Catering, and Food Business Websites.
+    Author: WebTend 
+    Author URI: https://webtend.net/
+    Version: 1.0
+
+--------------------------
+    CSS INDEX
+--------------------------
+    01. Default css 
+    02. Sections css
+    03. Header css 
+    04. Hero css
+    05. About css
+    06. Features css
+    07. Category css
+    08. Menu css
+    09. Video css
+    10. Elements css
+    11. Gallery css
+    12. Reservation css
+    13. Testimonial css
+    14. Team css
+    15. Faq css
+    16. Products css
+    17. Partner css
+    18. Blog css
+    19. Contact css
+    20. Footer css
+
+
+    
+-----------------------------------------------------------------------------------*/
+
+// global variables
+@import 'variables';
+
+// global Mixins
+@import 'mixin';
+
+// common
+@import 'common';
+
+// Sections
+@import 'sections/sections';
+
+// Header
+@import 'sections/header';
+
+// Hero
+@import 'sections/hero';
+
+// About
+@import 'sections/about';
+
+// Features
+@import 'sections/features';
+
+// Category
+@import 'sections/category';
+
+// Menu
+@import 'sections/menu';
+
+// Video
+@import 'sections/video';
+
+// Elements
+@import 'sections/elements';
+
+// Gallery
+@import 'sections/gallery';
+
+// Reservation
+@import 'sections/reservation';
+
+// Testimonial
+@import 'sections/testimonial';
+
+// Team
+@import 'sections/team';
+
+// Faq
+@import 'sections/faq';
+
+// Products
+@import 'sections/products';
+
+// Partner
+@import 'sections/partner';
+
+// Blog
+@import 'sections/blog';
+
+// Contact
+@import 'sections/contact';
+
+// Cart Checkout
+@import 'sections/cartcheckout';
+
+// Footer
+@import 'sections/footer';

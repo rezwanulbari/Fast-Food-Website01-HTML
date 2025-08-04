@@ -1,0 +1,66 @@
+
+/*---==================
+    05. About css 
+=================----*/
+
+
+.about-two_image-box{
+    & .shape{
+        position: absolute;
+        &.shape-one{
+            top: 0;
+            right: 0;
+            & span{
+                width: 245px;
+                height: 245px;
+                border-radius: 50%;
+                background-color: rgba(223, 63, 0, 0.1);
+            }
+        }
+    }
+}
+
+.about-three_image-box{
+    @media #{$xm}{
+        & img{
+            width: 100%;
+        }
+    }
+    & .about-img-one{
+        border-radius: 140px;
+    }
+    & .about-img-three{
+        border-radius: 140px 140px 0px 140px;
+    }
+}
+
+
+.chef-content-box{
+    & .check-style-one{
+        & li{
+            align-items: flex-start;
+            &:before{
+                margin-top: 7px;
+            }
+        }
+    }
+}
+
+.choose-item-list{
+    & > .row{
+        & .col-md-6{
+            &:nth-child(2){
+                margin-top: 50px;
+                @media #{$xs}{
+                    margin-top: 0;
+                }
+            }
+            &:nth-child(3){
+                margin-top: -50px;
+                @media #{$xs}{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

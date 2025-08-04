@@ -1,0 +1,44 @@
+
+
+/*---==================
+    17. Partner css 
+=================----*/
+
+.partner-slider-one{
+    & .slick-track{
+        display: flex;
+        align-items: center;
+    }
+    margin-left: -40px;
+    margin-right: -40px;
+    @media #{$xm}{
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    & .single-partner-item{
+        margin-left: 40px;
+        margin-right: 40px;
+        @media #{$xm}{
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+    }
+}
+
+.single-partner-item{
+    &:hover{
+        & .partner-img{
+            & img{
+                opacity: 1;
+            }
+        }
+    }
+    & .partner-img{
+        text-align: center;
+        & img{
+            margin: 0 auto;
+            opacity: .5;
+            @include transition(.3s);
+        }
+    }
+}

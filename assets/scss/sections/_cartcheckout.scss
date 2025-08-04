@@ -1,0 +1,97 @@
+/*******************************************************/
+/************** 32. Cart Checkout Section **************/
+/*******************************************************/
+/* Checkout Page */
+.package-summary table {
+    width: 100%;
+    border-radius: 5px;
+    background: #f9f9f9;
+    tr {
+        &:not(:last-child) {
+            border-bottom: 1px solid #EDEDED;
+        }
+    }
+    td {
+        padding: 10px 20px;
+        @media #{$xss} {
+            font-size: 16px;
+        }
+    }
+}
+
+.checkout-form {
+    .form_control {
+        border: 1px solid #ededed;
+        border-radius: 5px;
+        padding: 10px 25px;
+        height: auto;
+    }
+    .nice-select:after {
+        right: 20px;
+    }
+    
+}
+
+/* Cart Page */
+.total-cart-price {
+    padding: 20px 25px 6px;
+    background: #ededed;
+    display: flex;
+    justify-content: space-between;
+    h5 {
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+}
+
+.cart-single-item {
+    margin: 0;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ededed;
+    @media #{$xs} {
+        text-align: center;
+        flex-direction: column;
+        > * {
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+    }
+    .product-name {
+        width: 275px;
+        font-weight: 500;
+        @media #{$xs} {
+            width: auto;
+            font-weight: 600;
+        }
+    }
+    .nice-number {
+        padding: 5px;
+        border: 1px solid rgba(14, 19, 23, 0.1);
+        button {
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
+            background-color: transparent;
+        }
+        input {
+            border: none;
+            height: 30px;
+            padding: 0 15px;
+        }
+    }
+    .avilable {
+        i {
+            color: green;
+            font-size: 14px;
+        }
+    }
+    .close {
+        color: #DF3F00;
+        font-size: 22px;
+        background: transparent;
+    }
+}

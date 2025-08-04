@@ -1,0 +1,53 @@
+
+/*---==================
+    07. Category css 
+=================----*/
+
+
+.single-category-item{
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    @media #{$lm}{
+        padding: 30px 30px;
+    }
+    @media #{$xs}{
+        padding: 30px 20px;
+    }
+    &:hover{
+        & .content{
+            & .icon-btn{
+                background-color: $heading;
+                border-color: transparent;
+                color: #fff;
+            }
+            & h3.title{
+                color: $primary;
+            }
+        }
+    }
+    & .icon{
+        flex: 0 0 auto;
+        width: 85px;
+        height: 85px;
+        margin-inline-end: 20px;
+    }
+    & .content{
+        width: 100%;
+        align-items: center;
+        & h3.title{
+            flex-grow: 1;
+        }
+        & .icon-btn{
+            width: 55px;
+            height: 55px;
+            border: 1px solid rgba(14, 19, 23, 0.1);
+            @extend %flex-center;
+            background-color: transparent;
+            border-radius: 5px;
+            @include transition(.3s);
+        }
+    }
+}

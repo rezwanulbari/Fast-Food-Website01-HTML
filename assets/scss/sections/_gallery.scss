@@ -1,0 +1,204 @@
+
+/*---==================
+    11. Gallery css 
+=================----*/
+
+.gallery-slider-one{
+    margin-left: -15px;
+    margin-right: -15px;
+    & .gallery-item-one{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+.gallery-filter-button{
+    & .filter-btn{
+        & li{
+            display: inline-block;
+            cursor: pointer;
+            border: 1px solid rgba(14, 19, 23, 0.1);
+            border-radius: 5px;
+            padding: 9px 30px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            color: $heading;
+            margin: 10px 5px 0;
+            @include transition(.3s);
+            &.active,
+            &:hover{
+                color: #fff;
+                background-color: $primary;
+                border-color: transparent;
+            }
+        }
+    }
+}
+
+.single-gallery-item{
+    &:hover{
+        & .gallery-img{
+            & .gallery-overlay{
+                visibility: visible;
+                opacity: 1;
+                & .hover-content{
+                    @include transform(translateY(0px));
+                }
+            }
+        }
+    }
+    & .gallery-img{
+        position: relative;
+        overflow: hidden;
+        & .gallery-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(14, 19, 23, 0.2);
+            visibility: hidden;
+            opacity: 0;
+            padding: 50px 55px;
+            display: flex;
+            align-items: flex-end;
+            @include transition(.3s);
+            & .hover-content{
+                @include transform(translateY(-20px));
+                @include transition(.4s);
+                & .cat-btn{
+                    background-color: $primary;
+                    display: inline-block;
+                    padding: 10px 25px;
+                    color: #fff;
+                }
+                & h3.title{
+                    background-color: #fff;
+                    padding: 10px 25px;
+                    color: $heading;
+                    font-size: 30px;
+                    line-height: 33px;
+                }
+            }
+        }
+    }
+}
+
+
+
+.gallery-item-one{
+    &:hover{
+        & .gallery-img{
+            & .hover-overlay{
+                visibility: visible;
+                opacity: 1;
+                & .hover-content{
+                    @include transform(translateY(0px));
+                }
+            }
+        }
+    }
+    & .gallery-img{
+        position: relative;
+        overflow: hidden;
+        & img{
+            width: 100%;
+        }
+        & .hover-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(14, 19, 23, 0.4);
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 50px;
+            visibility: hidden;
+            opacity: 0;
+            @include transition(.3s);
+            & .hover-content{
+                padding: 25px 50px;
+                background-color: #fff;
+                text-align: center;
+                @include transform(translateY(-20px));
+                @include transition(.4s);
+            }
+            & .tag-btn{
+                color: $primary;
+                margin-bottom: 10px;
+            }
+            & h3.title{
+                font-size: 24px;
+                line-height: 26px;
+                margin-bottom: 18px;
+            }
+            & .icon-btn{
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                @extend %flex-center;
+                display: inline-flex;
+                background-color: $primary;
+                color: #fff;
+                @include transition(.4s);
+            }
+        }
+    }
+}
+
+
+.gallery-item-two{
+    &:hover{
+        & .gallery-img{
+            & .hover-overlay{
+                visibility: visible;
+                opacity: 1;
+                & .icon-btn{
+                    @include transform(translateY(0px));
+                }
+            }
+        }
+    }
+    & .gallery-img{
+        position: relative;
+        overflow: hidden;
+        & img{
+            width: 100%;
+        }
+        & .hover-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(14, 19, 23, 0.6);
+            @extend %flex-center;
+            visibility: hidden;
+            opacity: 0;
+            @include transition(.3s);
+            & .icon-btn{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                @extend %flex-center;
+                background-color: #fff;
+                color: $primary;
+                @include transform(translateY(20px));
+                @include transition(.4s);
+            }
+        }
+    }
+    & .gallery-content{
+        padding-top: 25px;
+        & h3.title{
+            line-height: 33px;
+            @media #{$xs}{
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+    }
+}

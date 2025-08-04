@@ -1,0 +1,47 @@
+/*******************************************************/
+/************** 32. Cart Checkout Section **************/
+/*******************************************************/
+/* Checkout Page */
+.package-summary table {
+  width: 100%; }
+
+.package-summary tbody {
+  background: #ededed; }
+  .package-summary tbody tr:not(:last-child) {
+    border-bottom: 1px solid #ededed; }
+  .package-summary tbody tr td {
+    padding: 10px 25px; }
+
+/* Cart Page */
+.total-cart-price {
+  padding: 20px 25px 6px;
+  background: #ededed; }
+
+.cart-item-wrap .alert {
+  margin-bottom: 0;
+  position: relative;
+  border-bottom: 1px solid #ededed; }
+  .cart-item-wrap .alert .product-name {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    width: 165px;
+    margin-bottom: 0; }
+  .cart-item-wrap .alert .avilable i {
+    font-size: 14px;
+    margin-right: 2px; }
+  .cart-item-wrap .alert .product-total-price {
+    font-weight: 800; }
+  .cart-item-wrap .alert .quantity-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 120px; }
+    .cart-item-wrap .alert .quantity-input button {
+      -webkit-box-flex: 0;
+      -ms-flex: none;
+      flex: none;
+      width: 33px; }
+    .cart-item-wrap .alert .quantity-input input {
+      padding: 5px 10px;
+      text-align: center; }

@@ -1,0 +1,196 @@
+
+/*---==================
+    02. Sections css 
+=================----*/
+
+.about-shape-section{
+    & .shape{
+        position: absolute;
+        z-index: -1;
+        @media #{$lm}{
+            display: none;
+        }
+        &.shape-one{
+            top: 130px;
+            left: 140px;
+            @media #{$lp}{
+                left: 40px;
+            }
+        }
+        &.shape-two{
+            top: 130px;
+            right: 140px;
+            @media #{$lp}{
+                right: 40px;
+            }
+        }
+    }
+}
+
+
+.about-shape-two-section{
+    & .shape{
+        position: absolute;
+        z-index: -1;
+        @media #{$lm}{
+            display: none;
+        }
+        &.shape-one{
+            bottom: 50px;
+            left: 160px;
+        }
+        &.shape-two{
+            top: 190px;
+            right: 200px;
+        }
+    }
+}
+
+
+.category-bg-section{
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(223, 63, 0, 0.9);
+        z-index: -1;
+    }
+}
+
+.video-line-section{
+    & .line-shape{
+        position: absolute;
+        z-index: -1;
+        @media #{$lm}{
+            display: none;
+        }
+        &.line-shape-one{
+            top: 80px;
+            left: 90px;
+            @media #{$lg}{
+                left: 0px;
+            }
+        }
+    }
+}
+
+.fact-bg-image{
+    position: relative;
+    z-index: 1;
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(223, 63, 0, 0.9);
+        z-index: -1;
+    }
+}
+
+.working-bg-section{
+    & .hours-bg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        @media #{$xm}{
+            display: none;
+        }
+    }
+}
+
+.testimonial-section-one{
+    & .shape{
+        position: absolute;
+        z-index: -1;
+        @media #{$xm}{
+            display: none;
+        }
+        &.line-shape-one{
+            left: -30px;
+            bottom: 120px;
+        }
+        &.shape-one{
+            right: 45px;
+            bottom: 45px;
+        }
+    }
+}
+
+.reservation-line-section{
+    overflow: hidden;
+    & .line-shape{
+        position: absolute;
+        z-index: -1;
+        @media #{$lm}{
+            display: none;
+        }
+        &.line-shape-one{
+            top: 40%;
+            @include transform(translateY(-40%));
+            right: -13%
+        }
+    }
+}
+
+
+.error-page-area{
+    & .object{
+        position: absolute;
+        z-index: -1;
+        @media #{$xs}{
+            display: none;
+        }
+        @media #{$sm}{
+            display: block;
+        }
+        &.object-one{
+            top: 21%;
+            left: 6.5%;
+            @media #{$lm}{
+                top: 50px;
+            }
+        }
+        &.object-two{
+            top: 18%;
+            right: 6%;
+            @media #{$lm}{
+                top: 50px;
+            }
+        }
+        &.object-three{
+            bottom: 8%;
+            right: 10%;
+        }
+    }
+    & .error-content{
+        & h2{
+            font-size: 65px;
+            line-height: 72px;
+            margin-bottom: 23px;
+            @media #{$xs}{
+                font-size: 32px;
+                line-height: 42px;
+            }
+        }
+        & p{
+            font-size: 18px;
+            line-height: 200%;
+            margin-bottom: 42px;
+        }
+    }
+}
+
+.map-section{
+    & .map-box{
+        & iframe{
+            min-height: 575px;
+        }
+    }
+}

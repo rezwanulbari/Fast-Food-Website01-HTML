@@ -1,0 +1,194 @@
+
+/*---==================
+    12. Reservation css 
+=================----*/
+
+.reservation-wrapper-one{
+    & .reservation-content-box{
+        padding-inline-end: 15%;
+        @media #{$lm}{
+            padding-inline-end: 0;
+        }
+    }
+    & .reservation-after-img{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        @media #{$lm}{
+            display: none;
+        }
+    }
+}
+
+.reservation-three_image-box{
+    margin-inline-start: -70px;
+    min-height: 420px;
+    @media #{$lm}{
+        margin-inline-start: 0;
+    }
+    & .reservation-img-two{
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        z-index: -1;
+    }
+    & .reservation-img-three{
+        position: absolute;
+        left: -70px;
+        bottom: 0;
+    }
+}
+
+
+form.reservation-form{
+    & label{
+        position: absolute;
+        & i{
+            color: $heading;
+        }
+    }
+    & .nice-select{
+        &:after{
+            content: '\f017';
+        }
+        & ul.list{
+            height: 280px;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+    }
+}
+
+
+.reservation-style-one{
+    form.reservation-form{
+        & label{
+            position: absolute;
+            top: 23px;
+            right: 30px;
+            & i{
+                color: $heading;
+            }
+        }
+        & .nice-select,
+        & .form_control{
+            height: 75px;
+            background-color: #FBF8F5;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: $heading;
+            &::placeholder{
+                color: $heading;
+            }
+        }
+        & .nice-select{
+            padding: 0 30px;
+            line-height: 75px;
+            &:after{
+                right: 30px;
+            }
+        }
+    }
+}
+
+
+.reservation-style-two{
+    form.reservation-form{
+        & label{
+            top: 18px;
+            right: 20px;
+        }
+        & .nice-select,
+        & .form_control{
+            height: 64px;
+            background-color: #fff;
+            border: 1px solid rgba(14, 19, 23, 0.1);
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: $heading;
+            padding: 0 20px;
+            &::placeholder{
+                color: $heading;
+            }
+        }
+        & .nice-select{
+            line-height: 64px;
+            &:after{
+                right: 20px;
+            }
+        }
+        & .main-btn{
+            padding: 20px 30px;
+            width: 100%;
+        }
+    }
+}
+.reservation-style-three{
+    form.reservation-form{
+        & label{
+            top: 20px;
+            right: 25px;
+        }
+        & .nice-select,
+        & .form_control{
+            background-color: #fff;
+            border: 1px solid rgba(14, 19, 23, 0.1);
+            border-radius: 5px;
+            height: 70px;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 0 25px;
+            color: $heading;
+            margin-bottom: 20px;
+            &::placeholder{
+                color: $heading;  
+            }
+        }
+        & .nice-select{
+            line-height: 70px;
+            &:after{
+                right: 25px;
+            }
+        }
+    }
+}
+.reservation-style-four{
+    form.reservation-form{
+        & label{
+            top: 20px;
+            right: 25px;
+        }
+        & .nice-select,
+        & .form_control{
+            height: 70px;
+            background-color: #FDF5F2;
+            border: 1px solid rgba(14, 19, 23, 0.1);
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: $heading;
+            padding: 0 25px;
+            &::placeholder{
+                color: $heading;
+            }
+        }
+        & textarea.form_control{
+            padding-top: 18px;
+            min-height: 155px;
+        }
+        & .nice-select{
+            line-height: 70px;
+            &:after{
+                right: 25px;
+            }
+        }
+        & .main-btn{
+            padding: 20px 30px;
+            width: 100%;
+        }
+    }
+}
